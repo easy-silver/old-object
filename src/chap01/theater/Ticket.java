@@ -1,4 +1,4 @@
-package chap01.ticket;
+package chap01.theater;
 
 /**
  * 공연 관람을 위한 티켓

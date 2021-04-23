@@ -1,4 +1,4 @@
-package chap01.ticket;
+package chap01.theater;
 
 /**
  * 관람객을 맞이하는 소극장

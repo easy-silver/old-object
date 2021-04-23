@@ -1,4 +1,4 @@
-package chap01.ticket;
+package chap01.theater;
 
 import java.time.LocalDateTime;
 

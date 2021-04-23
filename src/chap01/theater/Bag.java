@@ -1,4 +1,4 @@
-package chap01.ticket;
+package chap01.theater;
 
 /**
  * 관람객의 소지품을 보관하는 가방
