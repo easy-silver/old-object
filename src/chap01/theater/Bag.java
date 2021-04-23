@@ -22,25 +22,28 @@ public class Bag {
         this.amount = amount;
     }
 
+    /* 티켓 보관 및 금액 지불 */
+    public long hold(Ticket ticket) {
+        if (hasInvitation()) {
+            setTicket(ticket);
+            return 0L;
+        } else {
+            setTicket(ticket);
+            minusAmount(ticket.getFee());
+            return ticket.getFee();
+        }
+    }
+
     // 초대장 보유 여부
-    public boolean hasInvitation() {
+    private boolean hasInvitation() {
         return invitation != null;
     }
 
-    // 티켓 소유 여부
-    public boolean hasTicket() {
-        return ticket != null;
-    }
-
-    public void setTicket(Ticket ticket) {
+    private void setTicket(Ticket ticket) {
         this.ticket = ticket;
     }
 
-    public void minusAmount(long amount) {
+    private void minusAmount(long amount) {
         this.amount -= amount;
-    }
-
-    public void plusAmount(long amount) {
-        this.amount += amount;
     }
 }
